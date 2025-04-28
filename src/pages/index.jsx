@@ -2,14 +2,14 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import { Container } from '@/components/Container'
-import { TwitterIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 
-import Article from '@/ui-lib/article'
+// import Article from '@/ui-lib/article'
 // import Newsletter from '@/ui-lib/newsletter'
-import Photos from '@/ui-lib/photos'
-import Resume from '@/ui-lib/resume'
+// import Photos from '@/ui-lib/photos'
+// import Resume from '@/ui-lib/resume'
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
@@ -32,11 +32,12 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software Engineer.
+            Software Engineer and designer. Turning ideas into end-to-end
+            digital experiences.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m Alex, a software engineer based in London. I&apos;m
-            passionate about creating engaging and intuitive software.
+            I&apos;m Alex, a software engineer and designer based in London.
+            {/* I&apos;m passionate about creating engaging and intuitive software. */}
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -52,7 +53,7 @@ export default function Home({ articles }) {
           </div>
         </div>
       </Container>
-      <Photos />
+      {/* <Photos /> */}
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
@@ -60,9 +61,9 @@ export default function Home({ articles }) {
               <Article key={article.slug} article={article} />
             ))} */}
           </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
+          <div className="space-y-10 lg:h-24 lg:pl-16 xl:pl-24">
             {/* <Newsletter /> */}
-            <Resume />
+            {/* <Resume /> */}
           </div>
         </div>
       </Container>

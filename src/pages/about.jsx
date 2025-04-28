@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import { Container } from '@/components/Container'
 import SocialLink from '@/ui-lib/social-link'
+// import Resume from '@/ui-lib/resume/index'
 import {
   CodeWarsIcon,
   GitHubIcon,
@@ -100,6 +101,8 @@ export default function About() {
                 alex.ljack4@gmail.com
               </SocialLink>
             </ul>
+            <br className="mt-12" />
+            {/* <Resume /> */}
           </div>
         </div>
       </Container>

@@ -3,55 +3,77 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoSnake from '@/images/logos/bug.jpg'
-import logoTwenty from '@/images/logos/twenty.jpg'
-import logoBasketball from '@/images/logos/basketball.png'
-import logoGeocachr from '@/images/logos/geo-planet.svg'
+import logoMotion from '@/images/logos/motion_mm.png'
+import logoCoreKit from '@/images/logos/corekit_icon.png'
+// import logoSnake from '@/images/logos/bug.jpg'
+// import logoGeocachr from '@/images/logos/geo-planet.svg'
 
 const projects = [
   {
-    name: 'Snake II',
-    description: 'A rebuild of the classic, written in vanilla JavaScript.',
+    name: 'Motion (in progress)',
+    description:
+      'A fitness tracking app to replace logging my workouts in Apple Notes',
     link: {
-      href: 'https://alexljack.github.io/sei-project-1/',
-      repo: 'https://github.com/alexljack/sei-project-1',
+      href: 'https://github.com/alexljack/motion',
+      repo: 'https://github.com/alexljack/motion',
       label: 'github.com',
     },
-    logo: logoSnake,
+    logo: logoMotion,
   },
   {
-    name: 'TopTwenty',
+    name: 'CoreKit (in progress)',
     description:
-      'A movie website built with React, that displays the best 20 films of each genre and year.',
+      'A React component library to help quickly prototype fast, beautiful and accessible applications',
     link: {
-      href: 'https://top-twenty.herokuapp.com/',
-      repo: 'https://github.com/alexljack/sei-project-2',
+      href: 'https://github.com/alexljack',
+      repo: 'https://github.com/alexljack',
       label: 'github.com',
     },
-    logo: logoTwenty,
+    logo: logoCoreKit,
   },
-  {
-    name: 'GeocachR',
-    description:
-      'A geo-caching treasure hunting website. Front-end built with React and backend built with Node and MongoDB.',
-    link: {
-      href: 'http://getgeocachr.herokuapp.com/',
-      repo: 'https://github.com/alexljack/sei-group-project',
-      label: 'github.com',
-    },
-    logo: logoGeocachr,
-  },
-  {
-    name: 'NBA Legends',
-    description:
-      'The React front-end to an API I built. The back-end built with Node and MongoDB.',
-    link: {
-      href: 'http://nba-legend.herokuapp.com/',
-      repo: 'https://github.com/alexljack/nba-legends-api',
-      label: 'github.com',
-    },
-    logo: logoBasketball,
-  },
+  // {
+  //   name: 'Snake II',
+  //   description: 'A rebuild of the classic, written in vanilla JavaScript.',
+  //   link: {
+  //     href: 'https://alexljack.github.io/sei-project-1/',
+  //     repo: 'https://github.com/alexljack/sei-project-1',
+  //     label: 'github.com',
+  //   },
+  //   logo: logoSnake,
+  // },
+  // {
+  //   name: 'TopTwenty',
+  //   description:
+  //     'A movie website built with React, that displays the best 20 films of each genre and year.',
+  //   link: {
+  //     href: 'https://top-twenty.herokuapp.com/',
+  //     repo: 'https://github.com/alexljack/sei-project-2',
+  //     label: 'github.com',
+  //   },
+  //   logo: logoTwenty,
+  // },
+  // {
+  //   name: 'GeocachR',
+  //   description:
+  //     'A geo-caching treasure hunting website. Front-end built with React and backend built with Node and MongoDB.',
+  //   link: {
+  //     href: 'https://github.com/alexljack/sei-group-project',
+  //     repo: 'https://github.com/alexljack/sei-group-project',
+  //     label: 'github.com',
+  //   },
+  //   logo: logoGeocachr,
+  // },
+  // {
+  //   name: 'NBA Legends',
+  //   description:
+  //     'The React front-end to an API I built. The back-end built with Node and MongoDB.',
+  //   link: {
+  //     href: 'http://nba-legend.herokuapp.com/',
+  //     repo: 'https://github.com/alexljack/nba-legends-api',
+  //     label: 'github.com',
+  //   },
+  //   logo: logoBasketball,
+  // },
   // {
   //   name: 'Pensive',
   //   description:
@@ -91,8 +113,8 @@ export default function Projects() {
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
-          <p className="text-zinc-800 dark:text-zinc-100">Coming soon...</p>
-          {/* {projects.map((project) => (
+          {/* <p className="text-zinc-800 dark:text-zinc-100">Coming soon...</p> */}
+          {projects.map((project) => (
             <Card as="li" key={project.name}>
               <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <Image
@@ -111,7 +133,7 @@ export default function Projects() {
                 <span className="ml-2">{project.link.label}</span>
               </p>
             </Card>
-          ))} */}
+          ))}
         </ul>
       </SimpleLayout>
     </>

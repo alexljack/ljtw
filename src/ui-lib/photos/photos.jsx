@@ -3,9 +3,11 @@ import clsx from 'clsx'
 
 import image1 from '@/images/photos/london-aerial.jpg'
 import image2 from '@/images/photos/javascript-cup.jpg'
-import image3 from '@/images/photos/spidey.jpg'
 import image4 from '@/images/photos/typescript.png'
-import image5 from '@/images/photos/ramen.jpg'
+// import javascript from '@/images/tech_logos/javascript.png'
+// import typescript from '@/images/tech_logos/typescript.png'
+// import nodejs from '@/images/tech_logos/nodejs.png'
+// import react from '@/images/tech_logos/react_logo.png'
 
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import nccGroupLogo from '@/images/logos/ncc-group-logo.svg'
+import nccGroupLogo from '@/images/logos/ncc_group.webp'
 import gaLogo from '@/images/logos/ga-logo.png'
 import issLogo from '@/images/logos/integrated-service-solutions.svg'
 import { Button } from '@/components/Button'
