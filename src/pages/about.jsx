@@ -4,22 +4,21 @@ import Head from 'next/head'
 import { Container } from '@/components/Container'
 import SocialLink from '@/ui-lib/social-link'
 import {
-  TwitterIcon,
   CodeWarsIcon,
   GitHubIcon,
   LinkedInIcon,
   MailIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/latch-headshot.jpeg'
+import portraitImage from '@/images/alex-headshot.jpeg'
 
 export default function About() {
   return (
     <>
       <Head>
-        <title>About - Latch Jack</title>
+        <title>About - Alex Jack</title>
         <meta
           name="description"
-          content="I'm Latch Jack. I live in London, where I design and build applications."
+          content="I'm Alex Jack. I live in London, where I design and build applications."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -36,7 +35,7 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I&apos;m Latch. I live in London, where I design and build
+              I&apos;m Alex. I live in London, where I design and build
               applications.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
@@ -73,38 +72,32 @@ export default function About() {
           <div className="lg:pl-20">
             <ul role="list">
               <SocialLink
-                href="https://twitter.com/latchcodes"
-                icon={TwitterIcon}
-              >
-                Follow on Twitter
-              </SocialLink>
-              <SocialLink
-                href="https://www.codewars.com/users/latchjack"
+                href="https://www.codewars.com/users/alexjack"
                 icon={CodeWarsIcon}
                 className="mt-4"
               >
                 Follow on CodeWars
               </SocialLink>
               <SocialLink
-                href="https://github.com/latchjack"
+                href="https://github.com/alexljack"
                 icon={GitHubIcon}
                 className="mt-4"
               >
                 Follow on GitHub
               </SocialLink>
               <SocialLink
-                href="https://www.linkedin.com/in/latchjack/"
+                href="https://www.linkedin.com/in/alexljack/"
                 icon={LinkedInIcon}
                 className="mt-4"
               >
                 Connect on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:latch.jack@gmail.com"
+                href="mailto:alex.ljack4@gmail.com"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                latch.jack@gmail.com
+                alex.ljack4@gmail.com
               </SocialLink>
             </ul>
           </div>

@@ -7,15 +7,14 @@ import logoSnake from '@/images/logos/bug.jpg'
 import logoTwenty from '@/images/logos/twenty.jpg'
 import logoBasketball from '@/images/logos/basketball.png'
 import logoGeocachr from '@/images/logos/geo-planet.svg'
-// import logoPenseive from '@/images/logos/penseive.jpg'
 
 const projects = [
   {
     name: 'Snake II',
     description: 'A rebuild of the classic, written in vanilla JavaScript.',
     link: {
-      href: 'https://latchjack.github.io/sei-project-1/',
-      repo: 'https://github.com/latchjack/sei-project-1',
+      href: 'https://alexljack.github.io/sei-project-1/',
+      repo: 'https://github.com/alexljack/sei-project-1',
       label: 'github.com',
     },
     logo: logoSnake,
@@ -26,7 +25,7 @@ const projects = [
       'A movie website built with React, that displays the best 20 films of each genre and year.',
     link: {
       href: 'https://top-twenty.herokuapp.com/',
-      repo: 'https://github.com/latchjack/sei-project-2',
+      repo: 'https://github.com/alexljack/sei-project-2',
       label: 'github.com',
     },
     logo: logoTwenty,
@@ -37,7 +36,7 @@ const projects = [
       'A geo-caching treasure hunting website. Front-end built with React and backend built with Node and MongoDB.',
     link: {
       href: 'http://getgeocachr.herokuapp.com/',
-      repo: 'https://github.com/latchjack/sei-group-project',
+      repo: 'https://github.com/alexljack/sei-group-project',
       label: 'github.com',
     },
     logo: logoGeocachr,
@@ -48,7 +47,7 @@ const projects = [
       'The React front-end to an API I built. The back-end built with Node and MongoDB.',
     link: {
       href: 'http://nba-legend.herokuapp.com/',
-      repo: 'https://github.com/latchjack/nba-legends-api',
+      repo: 'https://github.com/alexljack/nba-legends-api',
       label: 'github.com',
     },
     logo: logoBasketball,
@@ -59,7 +58,7 @@ const projects = [
   //     'The schematics for the first rocket I designed that successfully made it to orbit.',
   //   link: {
   //     href: 'http://pensiveworld.herokuapp.com/',
-  //     repo: 'https://github.com/latchjack/sei-final-project',
+  //     repo: 'https://github.com/alexljack/sei-final-project',
   //     label: 'github.com',
   //   },
   //   logo: logoPenseive,
